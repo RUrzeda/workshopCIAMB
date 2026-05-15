@@ -30,7 +30,7 @@ export const CoverSlide = () => {
             Ministrante
           </p>
           <p className="font-display text-xl md:text-2xl font-semibold mb-2">
-            Prof. Roberto Urzêda
+            Roberto Urzêda
           </p>
           <a
             href="mailto:roberto.paiva@ueg.br"

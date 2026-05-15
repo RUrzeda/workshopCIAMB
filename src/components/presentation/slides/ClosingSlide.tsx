@@ -25,7 +25,7 @@ export const ClosingSlide = () => {
               Contato
             </p>
             <p className="font-display font-semibold text-2xl mb-3">
-              Prof. Roberto Urzêda
+              Roberto Urzêda
             </p>
             <a
               href="mailto:roberto.paiva@ueg.br"
