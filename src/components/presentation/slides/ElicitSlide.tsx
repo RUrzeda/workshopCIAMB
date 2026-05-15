@@ -2,40 +2,26 @@ import { SlideWrapper } from "../SlideWrapper";
 import { SlideTitle } from "../SlideTitle";
 import { BulletList } from "../BulletList";
 import { Highlight } from "../Highlight";
-import { FigureFrame } from "../FigureFrame";
-import { ExternalLink } from "lucide-react";
-import elicitScreenshot from "@/assets/elicit-screenshot.png";
-import elicitLogo from "@/assets/elicit-logo.png";
+import { ExternalLink, Search } from "lucide-react";
 
 export const ElicitSlide = () => {
   return (
     <SlideWrapper>
       <SlideTitle title="Elicit" subtitle="Síntese assistida de literatura científica" />
 
-      <div className="grid lg:grid-cols-[1fr_1.3fr] gap-6">
+      <div className="grid lg:grid-cols-2 gap-8">
         <div className="space-y-4">
-          <div className="bg-card border border-border rounded-xl p-5">
-            <img
-              src={elicitLogo}
-              alt="Logo Elicit"
-              className="h-10 w-auto object-contain mb-3"
-              loading="lazy"
-            />
-            <p className="text-muted-foreground leading-relaxed text-sm">
+          <div className="bg-card border border-border rounded-xl p-6">
+            <div className="flex items-center gap-2 mb-3">
+              <Search className="w-5 h-5 text-accent" />
+              <h3 className="font-display font-semibold text-foreground">O que é</h3>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
               Plataforma que utiliza IA para localizar artigos relevantes a partir de
               uma pergunta de pesquisa em linguagem natural e extrair, de forma
               estruturada, informações como objetivos, métodos, amostra e resultados.
             </p>
           </div>
-
-          <BulletList
-            items={[
-              { text: "Busca semântica em mais de 125 milhões de artigos" },
-              { text: "Tabela comparativa automática entre estudos" },
-              { text: "Resumo crítico baseado em evidências" },
-              { text: "Exportação para gerenciadores de referência" },
-            ]}
-          />
 
           <a
             href="https://elicit.com"
@@ -46,19 +32,26 @@ export const ElicitSlide = () => {
             <ExternalLink className="w-4 h-4" />
             elicit.com
           </a>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="font-display font-semibold text-foreground">
+            Principais funcionalidades
+          </h3>
+          <BulletList
+            items={[
+              { text: "Busca semântica em mais de 125 milhões de artigos" },
+              { text: "Tabela comparativa automática entre estudos" },
+              { text: "Resumo crítico baseado em evidências" },
+              { text: "Exportação para gerenciadores de referência" },
+            ]}
+          />
 
           <Highlight
-            text="Elicit acelera a triagem; não substitui a análise crítica do pesquisador."
+            text="Elicit acelera a triagem. Não substitui a análise crítica do pesquisador."
             variant="primary"
           />
         </div>
-
-        <FigureFrame
-          src={elicitScreenshot}
-          alt="Tela do Elicit mostrando análise de literatura sobre áreas de pastagem brasileira, com resumo automático dos artigos e tabela comparativa"
-          caption="Exemplo: síntese automática de artigos sobre pastagens brasileiras"
-          className="self-start"
-        />
       </div>
     </SlideWrapper>
   );

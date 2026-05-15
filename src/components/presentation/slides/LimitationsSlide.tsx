@@ -25,7 +25,7 @@ export const LimitationsSlide = () => {
           <InfoCard
             icon={Brain}
             title="Raciocínio limitado"
-            description='Apple (2024) — "The Illusion of Thinking" expõe limites em problemas formais'
+            description='Apple (2024). "The Illusion of Thinking" expõe limites em problemas formais'
           />
           <InfoCard
             icon={Scale}
@@ -64,7 +64,7 @@ export const LimitationsSlide = () => {
       </div>
 
       <Highlight
-        text="A maturidade no uso passa por reconhecer que IA generativa não é mecanismo de verdade — é mecanismo de plausibilidade textual."
+        text="A maturidade no uso passa por reconhecer que IA generativa não é mecanismo de verdade, e sim mecanismo de plausibilidade textual."
         variant="primary"
       />
     </SlideWrapper>

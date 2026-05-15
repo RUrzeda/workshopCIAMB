@@ -1,15 +1,14 @@
 import { SlideWrapper } from "./SlideWrapper";
-import { Clock } from "lucide-react";
 
 interface ModuleDividerProps {
   number: string;
   title: string;
   subtitle?: string;
-  duration: string;
+  duration?: string;
   topics: string[];
 }
 
-export const ModuleDivider = ({ number, title, subtitle, duration, topics }: ModuleDividerProps) => {
+export const ModuleDivider = ({ number, title, subtitle, topics }: ModuleDividerProps) => {
   return (
     <SlideWrapper className="bg-primary text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
@@ -29,16 +28,10 @@ export const ModuleDivider = ({ number, title, subtitle, duration, topics }: Mod
             {title}
           </h1>
           {subtitle && (
-            <p className="text-xl text-primary-foreground/80 mb-6 max-w-2xl">
+            <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl">
               {subtitle}
             </p>
           )}
-          <div className="flex items-center gap-2 text-primary-foreground/70 mb-8">
-            <Clock className="w-4 h-4 text-accent" />
-            <span className="font-display text-sm uppercase tracking-wider">
-              Duração estimada: {duration}
-            </span>
-          </div>
 
           <div className="border-t border-primary-foreground/20 pt-6 max-w-2xl">
             <p className="font-display uppercase tracking-wider text-xs text-primary-foreground/60 mb-3">

@@ -1,14 +1,14 @@
 import { SlideWrapper } from "./SlideWrapper";
 import { SlideTitle } from "./SlideTitle";
-import { Wrench, Clock, Target, FileCheck } from "lucide-react";
+import { Wrench, Target } from "lucide-react";
 
 interface ActivitySlideProps {
   number: string;
   title: string;
   objective: string;
-  duration: string;
+  duration?: string;
   steps: string[];
-  deliverable: string;
+  deliverable?: string;
   prompt?: string;
 }
 
@@ -16,9 +16,7 @@ export const ActivitySlide = ({
   number,
   title,
   objective,
-  duration,
   steps,
-  deliverable,
   prompt,
 }: ActivitySlideProps) => {
   return (
@@ -26,7 +24,7 @@ export const ActivitySlide = ({
       <div className="flex items-center gap-3 mb-2">
         <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/30 text-accent font-display text-xs uppercase tracking-widest">
           <Wrench className="w-3.5 h-3.5" />
-          Atividade {number} — Mão na massa
+          Atividade {number} · Mão na massa
         </span>
       </div>
       <SlideTitle title={title} />
@@ -39,19 +37,6 @@ export const ActivitySlide = ({
               Objetivo
             </h3>
             <p className="text-muted-foreground leading-relaxed">{objective}</p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4">
-              <Clock className="w-5 h-5 text-secondary mb-2" />
-              <p className="text-xs text-muted-foreground uppercase tracking-wider">Tempo</p>
-              <p className="font-display font-semibold text-foreground">{duration}</p>
-            </div>
-            <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
-              <FileCheck className="w-5 h-5 text-accent mb-2" />
-              <p className="text-xs text-muted-foreground uppercase tracking-wider">Entrega</p>
-              <p className="font-display font-semibold text-foreground text-sm leading-tight">{deliverable}</p>
-            </div>
           </div>
 
           {prompt && (

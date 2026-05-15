@@ -32,7 +32,7 @@ export const CabanacCaseSlide = () => {
           <p className="text-muted-foreground text-sm leading-relaxed mb-3">
             Trechos identificados em artigos publicados em revistas indexadas
             revelam que partes do texto foram coladas diretamente da saída de
-            modelos conversacionais, sem edição ou reescrita — passando por
+            modelos conversacionais, sem edição ou reescrita, passando por
             autores, coautores, revisores, copy editors e diagramadores sem
             detecção.
           </p>

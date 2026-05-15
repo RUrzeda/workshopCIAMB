@@ -44,7 +44,7 @@ export const FoundationModelsSlide = () => {
       </div>
 
       <Highlight
-        text="Compreender que estamos diante de modelos estatísticos pré-treinados — e não de sistemas de raciocínio formal — é essencial para uso crítico em pesquisa."
+        text="Compreender que estamos diante de modelos estatísticos pré-treinados, não de sistemas de raciocínio formal, é essencial para uso crítico em pesquisa."
         variant="primary"
       />
     </SlideWrapper>

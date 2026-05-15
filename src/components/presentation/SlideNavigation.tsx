@@ -13,11 +13,11 @@ interface SlideNavigationProps {
 const moduleBreaks = [0, 2, 9, 17, 25, 30, 38];
 const moduleLabels = [
   "Abertura",
-  "Módulo 1 — Fundamentos",
-  "Módulo 2 — Engenharia de Prompt",
-  "Módulo 3 — Pesquisa",
-  "Módulo 4 — Ensino",
-  "Módulo 5 — Reflexões",
+  "Módulo 1 · Fundamentos",
+  "Módulo 2 · Engenharia de Prompt",
+  "Módulo 3 · Pesquisa",
+  "Módulo 4 · Ensino",
+  "Módulo 5 · Reflexões",
   "Encerramento",
 ];
 

@@ -18,8 +18,8 @@ export const BigDataSlide = () => {
       />
 
       <p className="text-muted-foreground text-lg mb-8 max-w-3xl leading-relaxed">
-        A explosão de dados digitais nas últimas duas décadas — redes sociais, IoT,
-        transações, sensores — produziu o substrato necessário para que modelos
+        A explosão de dados digitais nas últimas duas décadas (redes sociais, IoT,
+        transações, sensores) produziu o substrato necessário para que modelos
         estatísticos aprendam padrões em larga escala.
       </p>
 

@@ -80,7 +80,7 @@ export const ConceptIASlide = () => {
 
       <Highlight
         icon={Lightbulb}
-        text="A IA contemporânea é estatística, não consciente. Modela padrões em dados — não compreende no sentido fenomenológico."
+        text="A IA contemporânea é estatística, não consciente. Modela padrões em dados, sem compreender no sentido fenomenológico."
         variant="accent"
       />
     </SlideWrapper>
